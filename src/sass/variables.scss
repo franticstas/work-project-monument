@@ -1,0 +1,22 @@
+$wrapper-width: 960px;
+$tablet-width: 959px;
+
+
+$OpenSans400: "OpenSans400", "Arial", sans-serif;
+$OpenSans700: "OpenSans700", "Arial", sans-serif;
+
+$bgHeadColor: #9ccc65;
+$bgLeftNav: #f7f7f7;
+$textColor: #273319;
+
+@mixin desktop {
+  @media (min-width: #{$wrapper-width}) {
+    @content;
+  }
+}
+
+@mixin media($size) {
+  @media (min-width: #{$size}) {
+    @content;
+  }
+}
