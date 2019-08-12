@@ -1,0 +1,86 @@
+/*
+ * Стили для видов монументов
+ */
+.monuments-types {
+  padding-top: 30px;
+
+  @include tablet {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 15px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: rotate(180deg);
+      background-image: url("../img/bg-header.svg");
+      background-repeat: repeat-x;
+    }
+  }
+
+  @include desktop {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+.monuments__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.monuments__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+  margin: 25px;
+}
+
+.monuments__img-block {
+  display: inline-block;
+  width: 165px;
+  height: 234px;
+  background-image: url("../img/bg-monuments.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.monuments__img-block img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.monuments__name {
+  text-transform: uppercase;
+  font-family: $PlayfairDisplay;
+  font-size: 18px;
+  color: #000000;
+  margin-top: 15px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    color: $gold;
+    text-decoration: underline;
+  }
+}
+
+.monuments__img-block:hover ~ .monuments__name,
+.monuments__img-block:active ~ .monuments__name,
+.monuments__img-block:focus ~ .monuments__name {
+  text-decoration: underline;
+  color: $gold
+}
