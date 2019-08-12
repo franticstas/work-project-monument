@@ -7,13 +7,19 @@ html {
 
 .wrapper {
   margin: 0 auto;
+  padding: 10px;
   max-width: $desktop-width;
+
+  @include tablet {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 body {
-  font-family: $PTSans;
+  font-family: $OpenSans;
   background-color: #ffffff;
-  color: #707070;
+  color: #000000;
 }
 
 address {
@@ -69,26 +75,55 @@ main {
   display: block;
 }
 
-h1, h2 {
-  color: #404040;
-  font-size: 25px;
-  line-height: 1;
-  font-weight: normal;
-  text-transform: uppercase;
-  padding: 0;
-  margin-bottom: 15px;
-  margin-top: 0;
-}
-
-h2 {
-  font-size: 21px;
-}
-
-p {
-  font-size: 15px;
-  line-height: 1.25;
-}
-
 .overflow-hidden {
   overflow: hidden;
+}
+
+.button-gold {
+  border: 1px solid #B09D41;
+  border-radius: 3px;
+  background-color: $gold;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 16px 15px;
+  position: relative;
+  max-width: 240px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -18px;
+    left: 0;
+    right: 0;
+    height: 18px;
+    background-image: url("../img/button-bord.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    height: 18px;
+    background-image: url("../img/button-bord.svg");
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-image: linear-gradient(to top, $gold 0%, #f6c93d 100%);
+  }
 }
