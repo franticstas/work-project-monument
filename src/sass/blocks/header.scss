@@ -269,10 +269,23 @@
   }
 }
 
+.page-header__contacts-block {
+  @include desktop {
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+}
+
 .page-header__contacts--phone {
  @include tablet {
    margin-right: 40px;
  }
+
+  @include desktop {
+    background-image: url("../img/icon-phone.svg");
+    margin-right: 100px;
+  }
 }
 
 .page-header__contacts--email,
@@ -285,11 +298,21 @@
     display: block;
     margin-right: 40px;
   }
+
+  @include desktop {
+    background-image: url("../img/icon-email.svg");
+    margin-right: 100px;
+  }
 }
 
 .page-header__contacts--address {
   @include media(900px) {
     display: block;
+  }
+
+  @include desktop {
+    background-image: url("../img/icon-placeholder.svg");
+    max-width: 180px;
   }
 }
 
