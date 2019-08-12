@@ -1,0 +1,57 @@
+/*
+ * Стили раздела Добыча камня
+ */
+.stone-mining {
+  background: linear-gradient(90.32deg, rgba(0, 0, 0, 0.4) 0.21%, rgba(0, 0, 0, 0.25) 71.25%, rgba(0, 0, 0, 0) 99.77%), url("../img/bg-stone-mining.jpg"),no-repeat left top;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #ffffff;
+  clip-path: ellipse(100% 60% at 50% 40%);
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-top: 240px;
+    padding-bottom: 240px;
+    text-align: left;
+  }
+}
+
+.stone-mining__text-block {
+  @include desktop {
+    margin-right: auto;
+    max-width: 690px;
+  }
+}
+
+.stone-mining__title {
+  font-family: $PlayfairDisplay;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+
+  @include tablet {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+}
+
+.stone-mining__description {
+  font-size: 16px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 50px;
+  }
+}
+
+.stone-mining__link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

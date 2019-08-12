@@ -127,3 +127,23 @@ main {
     background-image: linear-gradient(to top, $gold 0%, #f6c93d 100%);
   }
 }
+
+.button-simple-gold {
+  border-radius: 3px;
+  background-color: $gold;
+  border: 1px solid #B09D41;
+  padding: 16px 30px;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  max-width: 240px;
+  display: inline-block;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-image: linear-gradient(to top, $gold 0%, #f6c93d 100%);
+  }
+}

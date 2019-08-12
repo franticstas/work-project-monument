@@ -2,6 +2,8 @@
  * Стили для хедера
  */
 .page-header {
+  background-color: #F5F3EE;
+
   @include tablet {
     position: relative;
     padding-top: 15px;
@@ -221,6 +223,10 @@
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 20px;
+  }
+
+  .page-header__nav-item a {
+    border-bottom: 1px solid #E6E6E6;
   }
 
   .page-header__close-nav {
