@@ -959,3 +959,7 @@ main {
 .monuments__img-block:focus ~ .monuments__name {
   text-decoration: underline;
   color: #CFA84C; }
+
+/*
+ * Стили формы заказа
+ */
