@@ -135,17 +135,17 @@
       </div>
     </section>
 <!--    *********************** Форма заказа *********************-->
-    <section class="order-monument">
+    <section class="order-monument parallax-window" data-parallax="scroll" data-image-src="img/bg-order.jpg">
       <div class="wrapper">
         <h2 class="title-section">
           Заказать памятник
         </h2>
         <form class="order-monument__form">
           <label>
-            <input type="text">
+            <input type="text" id="phone" placeholder="+7 (___) ___-__-__">
           </label>
           <label>
-            <input type="email">
+            <input type="email" placeholder="E-mail">
           </label>
           <button class="button-gold" type="submit">Отправить заявку</button>
         </form>
@@ -156,6 +156,8 @@
   <div class="mask"></div>
   <!--  ************ Скрипты ***********-->
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

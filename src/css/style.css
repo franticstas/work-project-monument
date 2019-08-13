@@ -924,7 +924,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   min-width: 250px;
-  margin: 25px; }
+  margin: 25px;
+  text-align: center; }
 
 .monuments__img-block {
   display: inline-block;
@@ -963,3 +964,70 @@ main {
 /*
  * Стили формы заказа
  */
+.order-monument {
+  padding-top: 30px;
+  -webkit-clip-path: ellipse(100% 60% at 50% 40%);
+          clip-path: ellipse(100% 60% at 50% 40%); }
+  @media (min-width: 1170px) {
+    .order-monument {
+      padding-top: 90px;
+      padding-bottom: 150px;
+      -webkit-clip-path: ellipse(100% 60% at 50% 40%);
+              clip-path: ellipse(100% 60% at 50% 40%); } }
+
+.order-monument .title-section {
+  color: #ffffff; }
+
+.order-monument__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (min-width: 1170px) {
+    .order-monument__form {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.order-monument__form label {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 15px; }
+  @media (min-width: 1170px) {
+    .order-monument__form label {
+      margin: 0 10px; } }
+
+.order-monument__form input {
+  width: 100%;
+  color: #CFA84C;
+  padding: 20px 0;
+  padding-left: 50px;
+  font-size: 18px;
+  border-radius: 3px;
+  border: none; }
+
+.order-monument__form input::-webkit-input-placeholder {
+  color: #CFA84C;
+  font-size: 18px; }
+
+.order-monument__form input::-moz-placeholder {
+  color: #CFA84C;
+  font-size: 18px; }
+
+.order-monument__form input::-ms-input-placeholder {
+  color: #CFA84C;
+  font-size: 18px; }
+
+.order-monument__form input::placeholder {
+  color: #CFA84C;
+  font-size: 18px; }

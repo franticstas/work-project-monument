@@ -16,3 +16,5 @@ $('.mask').click(function() {
   $('body').removeClass('overflow-hidden');
   $('.mask').removeClass('show');
 });
+
+$('#phone').mask('+7 (999) 999-99-99');
