@@ -1,0 +1,128 @@
+/*
+ * Стили секции Схема работы
+ */
+.work-scheme {
+  padding-top: 30px;
+
+  @include desktop {
+    padding-top: 55px;
+  }
+}
+
+.work-scheme__wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    flex-direction: column;
+  }
+}
+
+.work-scheme__fitrst-list,
+.work-scheme__second-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.work-scheme__second-list {
+  counter-reset: list 4;
+
+  @include desktop {
+    flex-direction: row-reverse;
+    margin-top: 60px;
+  }
+}
+
+.work-scheme__first-item,
+.work-scheme__second-item {
+  list-style-type:none;
+  counter-increment: list;
+  position: relative;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 40px;
+  max-width: 250px;
+}
+
+.work-scheme__first-item:before,
+.work-scheme__second-item:before {
+  content: "0" counter(list);
+  position: absolute;
+  font-family: $PlayfairDisplay;
+  font-weight: bold;
+  font-size: 72px;
+  color: rgba(207, 168, 76, 0.15);
+  line-height: 0;
+  top: -15px;
+}
+
+.work-scheme__first-item:after {
+  @include desktop {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-arrow-scheme.svg");
+    width: 13px;
+    height: 26px;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.work-scheme__first-item:last-child {
+  &:after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    bottom: -65px;
+    top: auto;
+  }
+}
+
+.work-scheme__second-item:after {
+  @include desktop {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-arrow-scheme.svg");
+    width: 13px;
+    height: 26px;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+
+.work-scheme__second-item:last-child {
+  &:after {
+    background: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+.work-scheme__second-item:before {
+  content: "0" counter(list);
+}
+
+.work-scheme__first-item a {
+  font-weight: 700;
+  display: inline;
+  color: #000000;
+}
+
+.work-scheme__first-item span,
+.work-scheme__second-item span {
+  padding-left: 20px;
+  display: inline-block;
+}
