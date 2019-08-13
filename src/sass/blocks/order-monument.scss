@@ -1,14 +1,22 @@
 /*
  * Стили формы заказа
  */
+.obertka {
+
+}
+
 .order-monument {
   padding-top: 30px;
   clip-path: ellipse(100% 60% at 50% 40%);
+  background-image: url("../img/bg-order-big.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 
   @include desktop {
     padding-top: 90px;
     padding-bottom: 150px;
-    clip-path: ellipse(100% 60% at 50% 40%);
   }
 }
 
