@@ -1,0 +1,97 @@
+/*
+ * Стили для блока Частые вопросы
+ */
+.faq-block {
+  background-image: url("../img/bg-faq.jpg");
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../img/bg-header.svg");
+    background-repeat: repeat-x;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(180deg);
+    background-image: url("../img/bg-header.svg");
+    background-repeat: repeat-x;
+  }
+
+  @include desktop {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+}
+
+.faq-block__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include desktop {
+    justify-content: flex-start;
+  }
+}
+
+.faq-block__item {
+  position: relative;
+  padding-left: 90px;
+  max-width: 470px;
+  margin-bottom: 30px;
+
+  @include desktop {
+    margin-right: 100px;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/icon-faq.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+  }
+}
+
+.faq-block__text {
+  font-family: $PlayfairDisplay;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.faq-block__item a {
+  color: $gold;
+  font-weight: 600;
+  font-size: 15px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
+}

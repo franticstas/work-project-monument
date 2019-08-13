@@ -1212,10 +1212,12 @@ main {
  * Стили секции Схема работы
  */
 .work-scheme {
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
   @media (min-width: 1170px) {
     .work-scheme {
-      padding-top: 55px; } }
+      padding-top: 55px;
+      padding-bottom: 70px; } }
 
 @media (min-width: 768px) {
   .work-scheme__wrapper {
@@ -1339,3 +1341,160 @@ main {
 .work-scheme__second-item span {
   padding-left: 20px;
   display: inline-block; }
+
+/*
+ * Стили для блока Частые вопросы
+ */
+.faq-block {
+  background-image: url("../img/bg-faq.jpg");
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative; }
+  .faq-block::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../img/bg-header.svg");
+    background-repeat: repeat-x; }
+  .faq-block::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background-image: url("../img/bg-header.svg");
+    background-repeat: repeat-x; }
+  @media (min-width: 1170px) {
+    .faq-block {
+      padding-top: 55px;
+      padding-bottom: 70px; } }
+
+.faq-block__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (min-width: 1170px) {
+    .faq-block__list {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
+
+.faq-block__item {
+  position: relative;
+  padding-left: 90px;
+  max-width: 470px;
+  margin-bottom: 30px; }
+  @media (min-width: 1170px) {
+    .faq-block__item {
+      margin-right: 100px; } }
+  .faq-block__item:before {
+    position: absolute;
+    content: "";
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/icon-faq.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0; }
+
+.faq-block__text {
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+.faq-block__item a {
+  color: #CFA84C;
+  font-weight: 600;
+  font-size: 15px; }
+  .faq-block__item a:active, .faq-block__item a:hover, .faq-block__item a:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline; }
+
+/*
+ * Стили для секции Бесплатные услуги
+ */
+.free-service__title-description {
+  text-align: center;
+  font-size: 20px;
+  max-width: 570px;
+  line-height: 1.5;
+  margin: 0 auto; }
+
+.free-service__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (min-width: 1170px) {
+    .free-service__list {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.free-service__item {
+  max-width: 220px;
+  text-align: center; }
+
+.free-service__item:nth-child(2) {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .free-service__item:nth-child(2)::before {
+    position: absolute;
+    content: "или";
+    top: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .free-service__item:nth-child(2)::after {
+    position: absolute;
+    content: "или";
+    bottom: -30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.free-service__item-title {
+  color: #CFA84C;
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 72px;
+  margin-bottom: 15px; }
+
+.free-service__item-description {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.5; }
