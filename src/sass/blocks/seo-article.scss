@@ -1,0 +1,29 @@
+/*
+ * Секция SEO статья
+ */
+.seo-article {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include desktop {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+}
+
+.seo-article .title-section {
+  margin-bottom: 20px;
+}
+
+.seo-article__text {
+  font-weight: 300;
+  color: #595959;
+  font-size: 16px;
+  line-height: 1.5;
+  text-indent: 15px;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}

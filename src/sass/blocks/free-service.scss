@@ -2,7 +2,13 @@
  * Стили для секции Бесплатные услуги
  */
 .free-service {
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+  @include desktop {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
 }
 
 .free-service .title-section {

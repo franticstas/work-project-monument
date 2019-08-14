@@ -1,0 +1,100 @@
+/*
+ * Стили футера
+ */
+.footer-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  //clip-path: ellipse(100% 60% at 50% 40%);
+  //background-image: url("../img/bg-footer.jpg");
+  //background-repeat: no-repeat;
+  //background-position: center;
+  //background-size: cover;
+  //background-attachment: fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 91.9%), url("../img/lib_614001_polo.svg") left 50% bottom -41px / 2080px no-repeat, url("../img/bg-footer.jpg") left 50% top 50% / cover no-repeat fixed;
+
+
+  @include desktop {
+    padding-top: 90px;
+    padding-bottom: 150px;
+  }
+}
+
+.footer-page .wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    align-items: center;
+  }
+}
+
+.footer-page__map {
+  display: none;
+
+  @include desktop {
+    display: block;
+    border-radius: 3px;
+    width: 400px;
+    height: 200px;
+  }
+}
+
+.footer-page__address {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+
+  @include desktop {
+    max-width: 240px;
+    text-align: left;
+    line-height: 25px;
+  }
+}
+
+.footer-page__address-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-page__address address {
+  margin-bottom: 10px;
+}
+
+.footer-page__phone {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.footer-page__phone a {
+  display: inline-block;
+}
+
+.footer-page__phone-link {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 45px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-footer-phone.svg");
+    left: 0;
+    top: 0;
+  }
+}

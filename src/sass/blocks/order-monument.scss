@@ -1,18 +1,15 @@
 /*
  * Стили формы заказа
  */
-.obertka {
-
-}
-
 .order-monument {
   padding-top: 30px;
-  clip-path: ellipse(100% 60% at 50% 40%);
-  background-image: url("../img/bg-order-big.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  //clip-path: ellipse(100% 60% at 50% 40%);
+  //background-image: url("../img/bg-order-big.jpg");
+  //background-repeat: no-repeat;
+  //background-position: center;
+  //background-size: cover;
+  //background-attachment: fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 91.9%), url("../img/lib_614001_polo.svg") left 50% bottom -41px / 2080px no-repeat, url("../img/bg-order-big.jpg") left 50% top 50% / cover no-repeat fixed;
 
   @include desktop {
     padding-top: 90px;

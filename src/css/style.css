@@ -833,13 +833,10 @@ main {
  * Стили раздела Добыча камня
  */
 .stone-mining {
-  background: linear-gradient(90.32deg, rgba(0, 0, 0, 0.4) 0.21%, rgba(0, 0, 0, 0.25) 71.25%, rgba(0, 0, 0, 0) 99.77%), url("../img/bg-stone-mining.jpg"), no-repeat left top;
-  background-size: cover;
-  background-position: center;
   text-align: center;
   color: #ffffff;
-  -webkit-clip-path: ellipse(100% 60% at 50% 40%);
-          clip-path: ellipse(100% 60% at 50% 40%); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), color-stop(91.9%, rgba(0, 0, 0, 0))), url("../img/lib_614001_polo.svg") left 50% bottom -41px/2080px no-repeat, url("../img/bg-stone-mining.jpg") left 50% top 50%/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 91.9%), url("../img/lib_614001_polo.svg") left 50% bottom -41px/2080px no-repeat, url("../img/bg-stone-mining.jpg") left 50% top 50%/cover no-repeat; }
   @media (min-width: 768px) {
     .stone-mining {
       padding-top: 60px;
@@ -970,13 +967,8 @@ main {
  */
 .order-monument {
   padding-top: 30px;
-  -webkit-clip-path: ellipse(100% 60% at 50% 40%);
-          clip-path: ellipse(100% 60% at 50% 40%);
-  background-image: url("../img/bg-order-big.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), color-stop(91.9%, rgba(0, 0, 0, 0))), url("../img/lib_614001_polo.svg") left 50% bottom -41px/2080px no-repeat, url("../img/bg-order-big.jpg") left 50% top 50%/cover no-repeat fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 91.9%), url("../img/lib_614001_polo.svg") left 50% bottom -41px/2080px no-repeat, url("../img/bg-order-big.jpg") left 50% top 50%/cover no-repeat fixed; }
   @media (min-width: 1170px) {
     .order-monument {
       padding-top: 90px;
@@ -1433,6 +1425,14 @@ main {
 /*
  * Стили для секции Бесплатные услуги
  */
+.free-service {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (min-width: 1170px) {
+    .free-service {
+      padding-top: 55px;
+      padding-bottom: 70px; } }
+
 @media (min-width: 1170px) {
   .free-service .title-section {
     margin-bottom: 20px; } }
@@ -1522,3 +1522,119 @@ main {
   font-weight: 300;
   font-size: 15px;
   line-height: 1.5; }
+
+/*
+ * Секция SEO статья
+ */
+.seo-article {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (min-width: 1170px) {
+    .seo-article {
+      padding-top: 55px;
+      padding-bottom: 70px; } }
+
+.seo-article .title-section {
+  margin-bottom: 20px; }
+
+.seo-article__text {
+  font-weight: 300;
+  color: #595959;
+  font-size: 16px;
+  line-height: 1.5;
+  text-indent: 15px; }
+  @media (min-width: 1170px) {
+    .seo-article__text {
+      font-size: 18px;
+      line-height: 1.8; } }
+
+/*
+ * Стили футера
+ */
+.footer-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), color-stop(91.9%, rgba(0, 0, 0, 0))), url("../img/lib_614001_polo.svg") left 50% bottom -41px/2080px no-repeat, url("../img/bg-footer.jpg") left 50% top 50%/cover no-repeat fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 91.9%), url("../img/lib_614001_polo.svg") left 50% bottom -41px/2080px no-repeat, url("../img/bg-footer.jpg") left 50% top 50%/cover no-repeat fixed; }
+  @media (min-width: 1170px) {
+    .footer-page {
+      padding-top: 90px;
+      padding-bottom: 150px; } }
+
+@media (min-width: 768px) {
+  .footer-page .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media (min-width: 1170px) {
+  .footer-page .wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
+.footer-page__map {
+  display: none; }
+  @media (min-width: 1170px) {
+    .footer-page__map {
+      display: block;
+      border-radius: 3px;
+      width: 400px;
+      height: 200px; } }
+
+.footer-page__address {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px; }
+  @media (min-width: 1170px) {
+    .footer-page__address {
+      max-width: 240px;
+      text-align: left;
+      line-height: 25px; } }
+
+.footer-page__address-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px; }
+
+.footer-page__address address {
+  margin-bottom: 10px; }
+
+.footer-page__phone {
+  display: none; }
+  @media (min-width: 768px) {
+    .footer-page__phone {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.footer-page__phone a {
+  display: inline-block; }
+
+.footer-page__phone-link {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 45px; }
+  .footer-page__phone-link::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-footer-phone.svg");
+    left: 0;
+    top: 0; }
