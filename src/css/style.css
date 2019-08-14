@@ -427,7 +427,8 @@ main {
   max-width: 240px;
   margin-top: 20px;
   margin-bottom: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline-block; }
   .button-gold::before {
     position: absolute;
     content: "";
@@ -840,6 +841,10 @@ main {
   /*Email*/
   color: #CFA84C; }
 
+@media (min-width: 1170px) {
+  .page-header__contacts--phone a {
+    font-size: 18px; } }
+
 /*
  * Стили раздела Добыча камня
  */
@@ -978,6 +983,7 @@ main {
  */
 .order-monument {
   padding-top: 30px;
+  padding-bottom: 30px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), color-stop(91.9%, rgba(0, 0, 0, 0))), url("../img/lib_614001_polo.svg") left 50% bottom -41px/2080px no-repeat, url("../img/bg-order-big.jpg") left 50% top 50%/cover no-repeat fixed;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 91.9%), url("../img/lib_614001_polo.svg") left 50% bottom -41px/2080px no-repeat, url("../img/bg-order-big.jpg") left 50% top 50%/cover no-repeat fixed; }
   @media (min-width: 1170px) {
@@ -1041,6 +1047,36 @@ main {
 .order-monument__form input::placeholder {
   color: #CFA84C;
   font-size: 18px; }
+
+.order-monument__phone-label {
+  position: relative; }
+  .order-monument__phone-label::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 10px; }
+
+.order-monument__email-label {
+  position: relative; }
+  .order-monument__email-label::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 25px;
+    background-image: url("../img/icon-email.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 10px; }
 
 /*
  * Стили секции преимуществ
@@ -1442,7 +1478,7 @@ main {
   @media (min-width: 1170px) {
     .free-service {
       padding-top: 55px;
-      padding-bottom: 70px; } }
+      padding-bottom: 0; } }
 
 @media (min-width: 1170px) {
   .free-service .title-section {
@@ -1485,42 +1521,6 @@ main {
 .free-service__item {
   max-width: 220px;
   text-align: center; }
-
-.free-service__item:nth-child(2) {
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 30px; }
-  @media (min-width: 1170px) {
-    .free-service__item:nth-child(2) {
-      margin: 0 80px; } }
-  .free-service__item:nth-child(2)::before {
-    position: absolute;
-    content: "или";
-    top: -5px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-    @media (min-width: 1170px) {
-      .free-service__item:nth-child(2)::before {
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-        left: -55px; } }
-  .free-service__item:nth-child(2)::after {
-    position: absolute;
-    content: "или";
-    bottom: -30px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-    @media (min-width: 1170px) {
-      .free-service__item:nth-child(2)::after {
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-        right: -55px;
-        left: auto;
-        bottom: auto; } }
 
 .free-service__item-title {
   color: #CFA84C;
@@ -1650,3 +1650,63 @@ main {
     background-image: url("../img/icon-footer-phone.svg");
     left: 0;
     top: 0; }
+
+/*
+ * Стили для модальных окон
+ */
+.modal {
+  padding: 10px;
+  padding-bottom: 30px;
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px; }
+  @media (min-width: 768px) {
+    .modal {
+      width: 690px;
+      padding-left: 20px;
+      padding-right: 20px; } }
+
+.modal form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.modal label {
+  width: 100%;
+  max-width: 570px;
+  margin-bottom: 15px; }
+  @media (min-width: 1170px) {
+    .modal label {
+      margin: 0 10px; } }
+
+.modal input {
+  width: 100%;
+  color: #CFA84C;
+  padding: 10px 10px;
+  font-size: 18px;
+  border-radius: 3px;
+  border: 1px solid #E6E6E6; }
+
+.modal input::-webkit-input-placeholder {
+  color: #CFA84C;
+  font-size: 18px; }
+
+.modal input::-moz-placeholder {
+  color: #CFA84C;
+  font-size: 18px; }
+
+.modal input::-ms-input-placeholder {
+  color: #CFA84C;
+  font-size: 18px; }
+
+.modal input::placeholder {
+  color: #CFA84C;
+  font-size: 18px; }

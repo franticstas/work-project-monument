@@ -7,7 +7,7 @@
 
   @include desktop {
     padding-top: 55px;
-    padding-bottom: 70px;
+    padding-bottom: 0;
   }
 }
 
@@ -46,46 +46,6 @@
 .free-service__item {
   max-width: 220px;
   text-align: center;
-}
-
-.free-service__item:nth-child(2) {
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 30px;
-
-  @include desktop {
-    margin: 0 80px;
-  }
-
-  &::before {
-    position: absolute;
-    content: "или";
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    @include desktop {
-      top: 50%;
-      transform: translateY(-50%);
-      left: -55px;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "или";
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    @include desktop {
-      top: 50%;
-      transform: translateY(-50%);
-      right: -55px;
-      left: auto;
-      bottom: auto;
-    }
-  }
 }
 
 .free-service__item-title {

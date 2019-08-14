@@ -3,6 +3,7 @@
  */
 .order-monument {
   padding-top: 30px;
+  padding-bottom: 30px;
   //clip-path: ellipse(100% 60% at 50% 40%);
   //background-image: url("../img/bg-order-big.jpg");
   //background-repeat: no-repeat;
@@ -55,4 +56,38 @@
 .order-monument__form input::placeholder {
   color: $gold;
   font-size: 18px;
+}
+
+.order-monument__phone-label {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+  }
+}
+
+.order-monument__email-label {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 25px;
+    background-image: url("../img/icon-email.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+  }
 }

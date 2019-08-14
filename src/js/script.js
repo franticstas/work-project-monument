@@ -19,4 +19,4 @@ $('.mask').click(function() {
   $('.mask').removeClass('show');
 });
 
-$('#phone').mask('+7 (999) 999-99-99');
+$('.form-phone').mask('+7 (999) 999-99-99');

@@ -361,3 +361,8 @@
   color: $gold;
 }
 
+.page-header__contacts--phone a {
+  @include desktop {
+    font-size: 18px;
+  }
+}
