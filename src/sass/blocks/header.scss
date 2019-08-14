@@ -47,12 +47,14 @@
 
 .page-header__logo {/*Логотип*/
   text-align: center;
+  padding-right: 50px;
 
   @include tablet {
     text-align: left;
     position: relative;
     padding-bottom: 8px;
     margin-right: 40px;
+    padding-right: 0;
 
     &::before {
       position: absolute;
@@ -67,6 +69,16 @@
 
   @include desktop {
     margin-right: 250px;
+  }
+}
+
+.page-header__logo img {
+  width: 100%;
+  height: auto;
+  max-width: 336px;
+
+  @include tablet {
+    width: auto;
   }
 }
 
@@ -165,8 +177,9 @@
     top: 20px;
     padding: 0;
     border: none;
-    background-color: transparent;
     cursor: pointer;
+    background-color: $gold;
+    z-index: 2;
 
     &::before {
       content: "";

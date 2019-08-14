@@ -1,3 +1,5 @@
+new WOW().init();
+
 //Мобильное меню
 $('.page-header__open-nav').click(function() {
   $('.page-header__nav').toggleClass('page-header__nav--open');

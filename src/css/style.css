@@ -566,13 +566,15 @@ main {
 
 .page-header__logo {
   /*Логотип*/
-  text-align: center; }
+  text-align: center;
+  padding-right: 50px; }
   @media (min-width: 768px) {
     .page-header__logo {
       text-align: left;
       position: relative;
       padding-bottom: 8px;
-      margin-right: 40px; }
+      margin-right: 40px;
+      padding-right: 0; }
       .page-header__logo::before {
         position: absolute;
         content: "";
@@ -584,6 +586,14 @@ main {
   @media (min-width: 1170px) {
     .page-header__logo {
       margin-right: 250px; } }
+
+.page-header__logo img {
+  width: 100%;
+  height: auto;
+  max-width: 336px; }
+  @media (min-width: 768px) {
+    .page-header__logo img {
+      width: auto; } }
 
 .page-header__nav {
   /*Навигация*/ }
@@ -671,8 +681,9 @@ main {
     top: 20px;
     padding: 0;
     border: none;
-    background-color: transparent;
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #CFA84C;
+    z-index: 2; }
     .page-header__open-nav::before {
       content: "";
       position: absolute;
@@ -1582,7 +1593,8 @@ main {
       display: block;
       border-radius: 3px;
       width: 400px;
-      height: 200px; } }
+      height: 200px;
+      overflow: hidden; } }
 
 .footer-page__address {
   text-align: center;
