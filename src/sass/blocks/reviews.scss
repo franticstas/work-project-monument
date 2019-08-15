@@ -1,0 +1,104 @@
+/*
+ * Стили страницы с отзывами
+ */
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.reviews__item {
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  position: relative;
+  margin-bottom: 15px;
+  max-width: 570px;
+  min-width: 300px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "“";
+    font-family: $PlayfairDisplay;
+    font-size: 96px;
+    color: #F2F2F2;
+    top: -10px;
+    left: 0;
+    line-height: 1;
+  }
+}
+
+.reviews__title {
+  font-family: $PlayfairDisplay;
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.reviews__service {
+  font-weight: 300;
+  font-size: 12px;
+  color: #808080;
+  margin-bottom: 10px;
+}
+
+.reviews__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #595959;
+}
+
+.reviews-form form {/*Стили для формы отправки отзывов*/
+  display: flex;
+  flex-direction: column;
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.reviews-form label {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.reviews-form input,
+.reviews-form select,
+.reviews-form textarea {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px;
+  padding: 13px 18px;
+  font-size: 14px;
+}
+
+.reviews-form input::placeholder {
+  color: #BFBFBF;
+}
+
+.reviews-form option:disabled {
+  color: #BFBFBF;
+}
+
+.reviews-form button {
+  margin: 0 auto;
+
+  @include tablet {
+    margin-right: 0;
+  }
+}

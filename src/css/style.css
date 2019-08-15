@@ -1991,3 +1991,120 @@ main {
     .about-company__text-block {
       font-size: 18px;
       line-height: 1.8; } }
+
+/*
+ * Стили страницы с отзывами
+ */
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (min-width: 768px) {
+    .reviews__list {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+
+.reviews__item {
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  position: relative;
+  margin-bottom: 15px;
+  max-width: 570px;
+  min-width: 300px; }
+  @media (min-width: 768px) {
+    .reviews__item {
+      margin-bottom: 30px; } }
+  .reviews__item::before {
+    position: absolute;
+    content: "“";
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+    font-size: 96px;
+    color: #F2F2F2;
+    top: -10px;
+    left: 0;
+    line-height: 1; }
+
+.reviews__title {
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 10px; }
+
+.reviews__service {
+  font-weight: 300;
+  font-size: 12px;
+  color: #808080;
+  margin-bottom: 10px; }
+
+.reviews__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #595959; }
+
+.reviews-form form {
+  /*Стили для формы отправки отзывов*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 770px;
+  margin: 0 auto; }
+
+.reviews-form label {
+  width: 100%;
+  margin-bottom: 10px; }
+
+.reviews-form input,
+.reviews-form select,
+.reviews-form textarea {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px;
+  padding: 13px 18px;
+  font-size: 14px; }
+
+.reviews-form input::-webkit-input-placeholder {
+  color: #BFBFBF; }
+
+.reviews-form input::-moz-placeholder {
+  color: #BFBFBF; }
+
+.reviews-form input::-ms-input-placeholder {
+  color: #BFBFBF; }
+
+.reviews-form input::placeholder {
+  color: #BFBFBF; }
+
+.reviews-form option:disabled {
+  color: #BFBFBF; }
+
+.reviews-form button {
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .reviews-form button {
+      margin-right: 0; } }
