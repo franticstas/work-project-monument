@@ -75,7 +75,12 @@
 
 .modal__product-img img {
   max-width: 300px;
+  max-height: 150px;
   height: auto;
+
+  @include tablet {
+    max-height: none;
+  }
 }
 
 .modal__product-img,

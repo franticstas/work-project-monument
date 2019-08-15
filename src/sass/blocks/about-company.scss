@@ -1,0 +1,67 @@
+/*
+ * Стили страницы о компании
+ */
+.about-company {
+
+}
+
+.about-company__info-block {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+}
+
+.about-company__logo-block {
+  text-align: center;
+  margin-bottom: 20px;
+
+  @include desktop {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+}
+
+.about-company__logo {
+  margin-bottom: 10px;
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+
+.about-company__logo-block a {
+  border: 1px solid #B09D41;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: $gold;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px;
+  max-width: 335px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    color: #FFFFFF;
+    background-color: $gold;
+  }
+}
+
+.about-company__text-block {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+  text-indent: 20px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
