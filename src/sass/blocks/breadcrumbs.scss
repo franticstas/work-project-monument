@@ -1,14 +1,6 @@
 /*
  * БЛОК ХЛЕБНЫЕ КРОШКИ
  */
-.breadcrumbs {
-
-}
-
-.breadcrumbs .wrapper {
-  padding: 0;
-}
-
 .breadcrumbs__list {
   display: flex;
   flex-wrap: wrap;
@@ -31,18 +23,17 @@
   margin-left: 5px;
 
   &::before {
-    font-family: $OpenSans400;
-    content: "\\ ";
+    content: "> ";
     color: #828282;
     font-size: 13px;
   }
 }
 
 .breadcrumbs a {
-  color: #273319;
-  font-family: $OpenSans400;
-  font-size: 11px;
+  color: $gold;
+  font-size: 12px;
   line-height: 18px;
+  text-decoration: underline;
 
   &:hover {
     text-decoration: none;
@@ -50,5 +41,6 @@
 }
 
 .breadcrumbs__current a {
-  color: #828282;
+  color: #000000;
+  text-decoration: none;
 }

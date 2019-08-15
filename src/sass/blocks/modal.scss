@@ -28,7 +28,7 @@
 
 
   @include desktop {
-    margin: 0 10px;
+    margin: 10px 0;
   }
 }
 
@@ -44,4 +44,51 @@
 .modal input::placeholder {
   color: $gold;
   font-size: 18px;
+}
+
+.modal__product {/*Стили для модального окна заказа товара*/
+  @include desktop {
+    min-width: 970px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+.modal__product .title-section {
+  margin-bottom: 10px;
+}
+
+.modal__product-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
+.modal__product-img {
+  text-align: center;
+}
+
+.modal__product-img img {
+  max-width: 300px;
+  height: auto;
+}
+
+.modal__product-img,
+.modal__product-info {
+    width: 100%;
+}
+
+.modal__product-text {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.modal__hidden-input {
+  display: none;
 }
