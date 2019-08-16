@@ -1,0 +1,54 @@
+/*
+ * Стили для контактов
+ */
+.contacts-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 150px;
+  }
+}
+
+.contacts-page .footer-page__address {
+  color: #000000;
+}
+
+.contacts-page .footer-page__phone-link {
+  color: #000000;
+}
+
+.contacts-page__phone-title {
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.contacts-page .footer-page__map {
+  display: block;
+  margin-bottom: 25px;
+
+  @include tablet {
+    height: 300px;
+  }
+
+  @include desktop {
+    width: 570px;
+  }
+}
+
+.contacts-page .footer-page__phone {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}

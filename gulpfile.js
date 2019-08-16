@@ -32,3 +32,11 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
+
+const imagemin = require('gulp-imagemin');
+
+gulp.task('imagemin', () =>
+  gulp.src('src/img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/images'))
+);
