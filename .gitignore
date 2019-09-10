@@ -11,5 +11,4 @@ npm-debug.*
 Thumbs.db
 build/
 libs/
-fonts/
 dist/
